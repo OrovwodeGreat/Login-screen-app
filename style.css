@@ -1,0 +1,110 @@
+*{
+    font-family: poppins;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode:darken ;
+    /* backdrop-filter:blur(2px); */
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.contain{
+    background-color: transparent;
+    border: 0.1px solid white;
+    height: max-content;
+    padding: 1rem;
+    align-self: center;
+    border-radius: 10px;
+    margin: 1rem;
+    backdrop-filter:blur(5px) ;
+    box-shadow: 0 0 5px black;
+}
+.contain:hover{
+    box-shadow: 0px 0px 10px white,
+                0px 0px 10px white;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.contain h1{
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+    padding:0.9rem 0.1rem;
+}
+
+.contain img {
+    width: 80px;
+    /* border-radius: 5rem; */
+    position: absolute;
+    transform: translateY(-11rem);
+}
+form input{
+    padding: 0.3rem 0.3rem;
+    background-color: transparent;
+    border-radius: 5rem;
+    outline: none;
+    border:none;
+    color: white;
+}
+form  input::placeholder{
+    color: rgb(210, 207, 207);
+}
+.email, .password{
+    border: 1px solid white;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.email, .password i{
+    color: white;
+}
+
+.remember-forgot{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7rem;
+    gap: 2rem;
+    color: white;
+}
+.remember-forgot label input{
+    vertical-align: middle;
+    accent-color: white;
+    margin-right: 0.15rem;
+}
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+button{
+    padding:0.5rem;
+    border-radius: 5rem;
+    outline: none;
+    border: none;
+}
